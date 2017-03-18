@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -43,14 +44,21 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     
     // Provide a reference to the views for each data item
     static class ContactVH extends RecyclerView.ViewHolder {
+        TextView tvPrefix, tvName, tvPhone, tvEmail;
         
         ContactVH(View itemView) {
             super(itemView);
-            // TODO: 3/18/17 inflate views into member variables
+            tvPrefix = (TextView) itemView.findViewById(R.id.tv_item_contact_prefix);
+            tvName = (TextView) itemView.findViewById(R.id.tv_item_contact_name);
+            tvPhone = (TextView) itemView.findViewById(R.id.tv_item_contact_phone);
+            tvEmail = (TextView) itemView.findViewById(R.id.tv_item_contact_email);
         }
         
         void bind(@NonNull Contact contact) {
-            // TODO: 3/18/17 bind views to actual data 
+            tvPrefix.setText(String.valueOf(contact.getName().charAt(0))); // This needs to be String, because a char will value will throw an Exception
+            tvName.setText(contact.getName());
+            tvPhone.setText(contact.getPhone());
+            tvEmail.setText(contact.getEmail());
         }
     }
     
