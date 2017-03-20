@@ -51,4 +51,10 @@
     <string name="apartment">Apartment</string>
     <string name="address">Address</string>
     <string name="street">Street</string>
+
+    <!--Collage Strings-->
+    <string name="collageTitle">Photo Booth</string>
+    <string name="galleryTab">GALLERY</string>
+    <string name="galleryFacesTab">FACES</string>
+    <string name="galleryRecentsTab">RECENTS</string>
 </resources>

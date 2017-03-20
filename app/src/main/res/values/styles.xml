@@ -16,6 +16,16 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="fbMarginLeftRight">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="galleryTab">
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
     <style name="AppTheme.FB">
         <item name="colorPrimaryDark">@color/fb_main_color</item>
     </style>

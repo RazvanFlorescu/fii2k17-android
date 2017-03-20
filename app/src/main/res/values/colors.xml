@@ -11,9 +11,16 @@
     <color name="blue_1">@android:color/holo_blue_dark</color>
 
     <color name="grey_1">#777777</color>
+    <color name="grey_2">#25262b</color>
     <color name="grey_transparency_60">#77CCCCCC</color>
 
     <color name="fb_main_color">#223E4A</color>
 
     <color name="scrim">#BB000000</color>
+
+    <!--COLLAGE COLORS-->
+    <color name="divider">#2d2e33</color>
+    <color name="collage_blue">#85aac8</color>
+    <color name="galleryActiveTab">#b4cae1</color>
+    <color name="galleryTab">#7e7f84</color>
 </resources>

@@ -11,10 +11,7 @@
             android:theme="@style/AppTheme">
 
         <activity android:name=".RecyclerViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity">
 
@@ -32,8 +29,15 @@
         <activity android:name=".FrameLayoutActivity"/>
         <activity android:name=".CardViewActivity"/>
         <activity android:name=".ProgrammaticViewsActivity"/>
-        <activity android:name=".CollageActivity"/>
-        <activity android:name=".FacebookLoginActivity"/>
+        <activity android:name=".CollageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".FacebookLoginActivity">
+
+        </activity>
     </application>
 
 </manifest>
