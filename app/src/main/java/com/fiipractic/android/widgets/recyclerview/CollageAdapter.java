@@ -40,15 +40,23 @@ public class CollageAdapter extends RecyclerView.Adapter<CollageAdapter.CollageV
     }
 
     static class CollageVH extends RecyclerView.ViewHolder {
-        View vItem;
+        View vItem1, vItem2, vItem3, vItem4;
 
         public CollageVH(View itemView) {
             super(itemView);
-            vItem = itemView.findViewById(R.id.vItem);
+            vItem1 = itemView.findViewById(R.id.vItem1);
+            vItem2 = itemView.findViewById(R.id.vItem2);
+            vItem3 = itemView.findViewById(R.id.vItem3);
+            vItem4 = itemView.findViewById(R.id.vItem4);
+
         }
 
         void bind(int itemColor) {
-            vItem.setBackgroundColor(itemColor);
+            vItem1.setBackgroundColor(itemColor);
+            vItem2.setBackgroundColor(itemColor+1);
+            vItem3.setBackgroundColor(itemColor-1);
+            vItem4.setBackgroundColor(itemColor+2);
+
         }
     }
 

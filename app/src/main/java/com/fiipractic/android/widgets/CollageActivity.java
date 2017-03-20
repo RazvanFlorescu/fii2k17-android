@@ -37,7 +37,7 @@ public class CollageActivity extends AppCompatActivity {
     private void setUpRecyclerView() {
         // TODO: 3/18/17 to be completed in class
         collageAdapter = new CollageAdapter(SampleData.generateSampleColorsArray());
-        rvColorsList.setLayoutManager(new GridLayoutManager(this, 4));
+        rvColorsList.setLayoutManager(new LinearLayoutManager(this, 1, false));
         rvColorsList.setAdapter(collageAdapter);
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<LinearLayout
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
-    android:layout_width="90dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardUseCompatPadding="true"
     card_view:cardCornerRadius="8dp"
@@ -11,10 +11,39 @@
 >
 
     <View
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="100dp"
         android:background="@color/fb_main_color"
-        android:id="@+id/vItem"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:id="@+id/vItem1"
+        />    
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/fb_main_color"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:id="@+id/vItem2"
+        />    
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/fb_main_color"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:id="@+id/vItem3"
+        />   
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/fb_main_color"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:id="@+id/vItem4"
         />
 
-</android.support.v7.widget.CardView>
+</LinearLayout>
